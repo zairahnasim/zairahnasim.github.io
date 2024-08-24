@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namma India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg'); /* Replace with your background image */
+            background-size: auto;
+            color: white;
+            text-align: center;
+        }
+        .quiz-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin: 50px auto;
+            width: 60%;
+            border-radius: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;	
+        }
+        .options {
+            margin-bottom: 20px;
+        }
+        .options button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .feedback {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>How well you know Namma India</h1>
+
+        <div class="question">
+            <!--img src="leader1.jpg" alt="Leader Image"--> <!-- Replace with actual image -->
+            <p>1. Who is the current Prime Minister of India?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'correct')">Narendra Modi</button>
+                <button onclick="checkAnswer(this, 'wrong')">Rahul Gandhi</button>
+                <button onclick="checkAnswer(this, 'wrong')">Amit Shah</button>
+                <button onclick="checkAnswer(this, 'wrong')">Arvind Kejriwal</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="question">
+            <!--img src="leader1.jpg" alt="Leader Image"--> <!-- Replace with actual image -->
+            <p>2. What is the role of the President of India?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'wrong')">Head of Government</button>
+                <button onclick="checkAnswer(this, 'correct')">Ceremonial Head of State</button>
+                <button onclick="checkAnswer(this, 'wrong')">Chief Justice of India</button>
+                <button onclick="checkAnswer(this, 'wrong')">Head of Parliament</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="question">
+            <!--img src="leader1.jpg" alt="Leader Image"--> <!-- Replace with actual image -->
+            <p>3. How many states are there in India?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'wrong')">25</button>
+                <button onclick="checkAnswer(this, 'correct')">28</button>
+                <button onclick="checkAnswer(this, 'wrong')">29</button>
+                <button onclick="checkAnswer(this, 'wrong')">30</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="question">
+            <!--img src="leader1.jpg" alt="Leader Image"--> <!-- Replace with actual image -->
+            <p>4. Which is the highest court in India?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'wrong')">High Court</button>
+                <button onclick="checkAnswer(this, 'wrong')">District Court</button>
+                <button onclick="checkAnswer(this, 'correct')">Supreme Court</button>
+                <button onclick="checkAnswer(this, 'wrong')">Sessions Court</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="question">
+            <!--img src="leader1.jpg" alt="Leader Image"--> <!-- Replace with actual image -->
+            <p>5. What is the name of the national parliament of India?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'wrong')">Lok Sabha</button>
+                <button onclick="checkAnswer(this, 'wrong')">Rajya Sabha</button>
+                <button onclick="checkAnswer(this, 'correct')">Parliament of India</button>
+                <button onclick="checkAnswer(this, 'wrong')">House of Commons</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="question">
+            <!--img src="leader1.jpg" alt="Leader Image"--> <!-- Replace with actual image -->
+            <p>6. Which Indian Prime Minister was known as the "Iron Lady of India"?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'wrong')">Sonia Gandhi</button>
+                <button onclick="checkAnswer(this, 'wrong')">Sushma Swaraj</button>
+                <button onclick="checkAnswer(this, 'wrong')">Pratibha Patil</button>                
+		<button onclick="checkAnswer(this, 'correct')">Indira Gandhi</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="question">
+            <!--img src="leader1.jpg" alt="Leader Image"--> <!-- Replace with actual image -->
+            <p>7. Which Indian President was a renowned scientist and is known as the "Missile Man of India"?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'wrong')">Zakir Hussain</button>
+                <button onclick="checkAnswer(this, 'wrong')">Pranab Mukherjee</button>
+                <button onclick="checkAnswer(this, 'correct')">APJ Abdul Kalam</button>
+                <button onclick="checkAnswer(this, 'wrong')">Ram Nath Kovind</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="question">
+            <!--img src="leader1.jpg" alt="Leader Image"--> <!-- Replace with actual image -->
+            <p>8. Which Indian leader was awarded the Bharat Ratna before becoming Prime Minister?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'wrong')">Morarji Desai</button>
+                <button onclick="checkAnswer(this, 'correct')">Atal Bihari Vajpayee</button>
+                <button onclick="checkAnswer(this, 'wrong')">Lal Bahadur Shastri</button>
+                <button onclick="checkAnswer(this, 'wrong')">Manmohan Singh</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="question">
+            <!--img src="leader1.jpg" alt="Leader Image"--> <!-- Replace with actual image -->
+            <p>9. Who is the only Indian Prime Minister to never face the Parliament?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'wrong')">Gulzarilal Nanda</button>
+                <button onclick="checkAnswer(this, 'wrong')">Vishwanath Pratap Singh</button>
+                <button onclick="checkAnswer(this, 'wrong')">Chandra Shekhar</button>
+                <button onclick="checkAnswer(this, 'correct')">Charan Singh</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="question">
+            <!--img src="leader1.jpg" alt="Leader Image"--> <!-- Replace with actual image -->
+            <p>10. Which Indian political leader is known for the slogan "Jai Jawan Jai Kisan"?</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'wrong')">Indira Gandhi</button>
+                <button onclick="checkAnswer(this, 'wrong')">Jawaharlal Nehru</button>
+                <button onclick="checkAnswer(this, 'correct')">Lal Bahadur Shastri</button>
+                <button onclick="checkAnswer(this, 'wrong')">Rajiv Gandhi</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Add more questions in a similar way -->
+
+    </div>
+
+    <script>
+        function checkAnswer(button, answer) {
+            const feedbackDiv = button.parentElement.nextElementSibling;
+            if (answer === 'correct') {
+                feedbackDiv.innerHTML = "Correct! Well done.";
+                feedbackDiv.style.color = 'green';
+            } else {
+                feedbackDiv.innerHTML = "Wrong answer. Try again!";
+                feedbackDiv.style.color = 'red';
+            }
+        }
+    </script>
+</body>
+</html>
